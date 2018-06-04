@@ -22,6 +22,6 @@ function countDown (toDate) {
 
 
 // return alternate view on DOM depending on how near we are
-console.log(countDown("May 24, 2018"));
+console.log(countDown("July 12, 2018"));
 
-document.getElementById("title").innerHTML = countDown("May 24, 2018");
+document.getElementById("title").innerHTML = countDown("July 12, 2018");
