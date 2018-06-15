@@ -14,10 +14,32 @@ function countDown (toDate) {
    // Calculate difference -formatted from ms to readable
   let remainDays = function() {
     let res = (arguments[1] - arguments[0]) / oneDay;
-    return Math.ceil(res) + " dagar kvar";
+    return Math.ceil(res) + "!";
   }
 
   return remainDays(today, toDate);
+}
+
+
+function checkUncheck() {
+  const input = document.getElementById("dn");
+
+  if (input.checked === true) {
+    console.log('Checked!');
+    document.body.style.backgroundColor = "#fe7702";
+
+  } else {
+    console.log('Unhecked!');
+    document.body.style.backgroundColor = '';
+  }
+}
+
+function check() {
+    document.getElementById("dn").checked = true;
+}
+
+function uncheck() {
+    document.getElementById("dn").checked = false;
 }
 
 

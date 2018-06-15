@@ -1,70 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name = "viewport" content = "initial-scale = 1.3, user-scalable = no">
+
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css"/>
     <title>Hur många dagar är det kvar egentligen?</title>
   </head>
   <body>
- <p class="lead">Hur många dagar är det kvar nurå?</p>
 
- <div class="scene">
-       <div class="sky">
-         <div class="sky__cloud-group">
-           <div class="sky__cloud"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud sky__cloud--small"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud sky__cloud--small"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud sky__cloud--small"><div class="sky__cloud--bubbles"></div></div>
-         </div>
-         <div class="sky__cloud-group">
-           <div class="sky__cloud"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud sky__cloud--small"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud sky__cloud--small"><div class="sky__cloud--bubbles"></div></div>
-           <div class="sky__cloud sky__cloud--small"><div class="sky__cloud--bubbles"></div></div>
-         </div>
-       </div>
-       <div class="bird">
-         <div class="bird__head">
-           <div class="bird__head--hairs"></div>
-           <div class="bird__head--eye"></div>
-           <div class="bird__head--spot"></div>
-           <div class="bird__head--beak"></div>
-           <div class="bird__head--reflection">
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-             <div class="bird__head--reflection--dot"></div>
-           </div>
-         </div>
-         <div class="bird__body"></div>
-         <div class="bird__wing"></div>
-         <div class="bird__legs">
-           <div class="bird__leg bird__leg--left"></div>
-           <div class="bird__leg bird__leg--right"></div>
-         </div>
-       </div>
- </div>
+   <p class="lead">Hur många dagar är det kvar nurå?</p>
+   <div class="toggleWrapper">
+     <input type="checkbox" onclick="checkUncheck()" class="dn" id="dn"/>
+       <label for="dn" class="toggle">
+       <span class="toggle__handler">
+     </label>
+     <div class="bear-body">
+       <span class="eye left"></span>
+       <span class="eye right"></span>
+     </div>
+   </div>
+   <span id="title"></span>
 
-  <h1 id="title"></h1>
+  <!-- <h1 id="title"></h1> -->
 
 
   <script src="index.js"></script>
